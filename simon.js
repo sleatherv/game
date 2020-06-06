@@ -126,7 +126,7 @@ class Juego{
         }
     }
     ganoElJuego(){
-        swal("Ganaste",":)","success")
+        swal("Ganaste","","success")
         .then(() =>{this.inicializar()});
     }
     perdioElJuego(){
