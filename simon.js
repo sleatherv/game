@@ -130,7 +130,7 @@ class Juego{
         .then(() =>{this.inicializar()});
     }
     perdioElJuego(){
-        swal("Perdiste", "Por Mariconeti", "error") 
+        swal("Perdiste", "", "error") 
         .then(() =>{
             this.eliminarEventosClick();
             this.inicializar();
