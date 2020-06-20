@@ -11,19 +11,19 @@ class Juego{
         this.inicializar();
         this.generarSecuencia();
         setTimeout(()=>{
-            
+
             this.siguienteNivel();
         }, 500)
-       
+
     }
     inicializar(){
-        
+
         this.siguienteNivel = this.siguienteNivel.bind(this);
         this.elegirColor = this.elegirColor.bind(this);
         this.toggleBtnEmpezar();
         this.nivel = 1;
         this.colores = {
-            celeste, 
+            celeste,
             violeta,
             naranja,
             verde
@@ -33,10 +33,10 @@ class Juego{
     toggleBtnEmpezar(){
 
         if (btnEmpezar.classList.contains('hide')) {
-            
+
             btnEmpezar.classList.remove('hide');
         }else{
-            
+
             btnEmpezar.classList.add('hide');
         }
     }
@@ -130,7 +130,7 @@ class Juego{
         .then(() =>{this.inicializar()});
     }
     perdioElJuego(){
-        swal("Perdiste", "", "error") 
+        swal("Perdiste", "", "error")
         .then(() =>{
             this.eliminarEventosClick();
             this.inicializar();
