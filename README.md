@@ -1,2 +1,2 @@
-# game
-Simon Dice
+# Javascript  -  Simón Dice
+
